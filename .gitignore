@@ -155,3 +155,10 @@ vite.config.ts.timestamp-*
 .nx/cache
 .nx/workspace-data
 .nx/migrate-runs
+
+# Ulnar RPG - test artifacts
+/coverage/
+/playwright-report/
+/playwright/.cache/
+/playwright/.auth/
+/test-results/
