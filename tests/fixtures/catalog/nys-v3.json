@@ -1,0 +1,876 @@
+{
+  "rulesVersion": "nys-v3",
+  "sourceWorkbook": "Nys V3.xlsx",
+  "sourceSheet": "Data automatisation",
+  "races": [
+    {
+      "id": "humain-e",
+      "name": "Humain.e",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": 5,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": -1,
+        "instinct": null
+      },
+      "sourceRange": "A2:M2"
+    },
+    {
+      "id": "haut-e-elfe",
+      "name": "Haut.e-Elfe",
+      "basePv": 1,
+      "basePp": 4,
+      "modifiers": {
+        "physique": -5,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": 1,
+        "instinct": null
+      },
+      "sourceRange": "A3:M3"
+    },
+    {
+      "id": "elfe-noir-e",
+      "name": "Elfe noir.e",
+      "basePv": 2,
+      "basePp": 3,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": -5,
+        "volonte": null,
+        "force": null,
+        "finesse": 1,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A4:M4"
+    },
+    {
+      "id": "barbegivre",
+      "name": "Barbegivre",
+      "basePv": 4,
+      "basePp": 1,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": 1,
+        "savoir": null,
+        "instinct": -1
+      },
+      "sourceRange": "A5:M5"
+    },
+    {
+      "id": "barbebraise",
+      "name": "Barbebraise",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": -1,
+        "finesse": null,
+        "charisme": 1,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A6:M6"
+    },
+    {
+      "id": "orc",
+      "name": "Orc",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": 1,
+        "finesse": -1,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A7:M7"
+    },
+    {
+      "id": "viera",
+      "name": "Viera",
+      "basePv": 2,
+      "basePp": 3,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": -1,
+        "empathie": null,
+        "savoir": null,
+        "instinct": 1
+      },
+      "sourceRange": "A8:M8"
+    },
+    {
+      "id": "draken",
+      "name": "Draken",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": 5,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": -1,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A9:M9"
+    },
+    {
+      "id": "ulanari",
+      "name": "Ulanari",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": -5,
+        "mental": null,
+        "volonte": 10,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A10:M10"
+    },
+    {
+      "id": "darai",
+      "name": "Daraï",
+      "basePv": 2,
+      "basePp": 3,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": 1,
+        "charisme": null,
+        "empathie": null,
+        "savoir": -1,
+        "instinct": null
+      },
+      "sourceRange": "A11:M11"
+    },
+    {
+      "id": "vampire",
+      "name": "Vampire",
+      "basePv": 4,
+      "basePp": 1,
+      "modifiers": {
+        "physique": 5,
+        "social": null,
+        "mental": -5,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A12:M12"
+    }
+  ],
+  "classes": [
+    {
+      "id": "barde",
+      "name": "Barde",
+      "sourceRange": "O1"
+    },
+    {
+      "id": "berserker",
+      "name": "Berserker",
+      "sourceRange": "O2"
+    },
+    {
+      "id": "brisefer",
+      "name": "Brisefer",
+      "sourceRange": "O3"
+    },
+    {
+      "id": "cros-ardents",
+      "name": "Cros ardents",
+      "sourceRange": "O4"
+    },
+    {
+      "id": "fusilier",
+      "name": "Fusilier",
+      "sourceRange": "O5"
+    },
+    {
+      "id": "lance-dargent",
+      "name": "Lance d'argent",
+      "sourceRange": "O6"
+    },
+    {
+      "id": "lame-de-laube",
+      "name": "Lame de l'aube",
+      "sourceRange": "O7"
+    },
+    {
+      "id": "lance-ecailles",
+      "name": "Lance-écailles",
+      "sourceRange": "O8"
+    },
+    {
+      "id": "mage",
+      "name": "Mage",
+      "sourceRange": "O9"
+    },
+    {
+      "id": "marteau-tempete",
+      "name": "Marteau-tempête",
+      "sourceRange": "O10"
+    },
+    {
+      "id": "sentinelle",
+      "name": "Sentinelle",
+      "sourceRange": "O11"
+    },
+    {
+      "id": "shaman",
+      "name": "Shaman",
+      "sourceRange": "O12"
+    },
+    {
+      "id": "sombrelune",
+      "name": "Sombrelune",
+      "sourceRange": "O13"
+    },
+    {
+      "id": "sorceleur",
+      "name": "Sorceleur",
+      "sourceRange": "O14"
+    },
+    {
+      "id": "ironclaw",
+      "name": "Ironclaw",
+      "sourceRange": "O15"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "sourceRange": "O16"
+    },
+    {
+      "id": "chante-esprit",
+      "name": "Chante-esprit",
+      "sourceRange": "O17"
+    },
+    {
+      "id": "cendresang",
+      "name": "Cendresang",
+      "sourceRange": "O18"
+    },
+    {
+      "id": "lame-eternelle",
+      "name": "Lame Éternelle",
+      "sourceRange": "O19"
+    },
+    {
+      "id": "veilleur",
+      "name": "Veilleur",
+      "sourceRange": "O20"
+    },
+    {
+      "id": "lame-celeste",
+      "name": "Lame Céleste",
+      "sourceRange": "O21"
+    }
+  ],
+  "professions": [
+    {
+      "id": "forgeron",
+      "name": "Forgeron",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Équipement de palier 1 + réparation"
+        },
+        {
+          "tier": 2,
+          "description": "Équipement de palier 2 + réparation"
+        },
+        {
+          "tier": 3,
+          "description": "Équipement de palier 3 + réparation"
+        },
+        {
+          "tier": 4,
+          "description": "Équipement de palier 4 + réparation"
+        },
+        {
+          "tier": 5,
+          "description": "Attribut \"Légendaire\" possible"
+        }
+      ],
+      "sourceRange": "A67:F67"
+    },
+    {
+      "id": "alchimiste",
+      "name": "Alchimiste",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Potion mineure (2D6) + ingrédient de tier 1"
+        },
+        {
+          "tier": 2,
+          "description": "Potion standard (4D6) + ingrédient de tier 2"
+        },
+        {
+          "tier": 3,
+          "description": "Potion majeur (6D6) + ingrédient de tier 3"
+        },
+        {
+          "tier": 4,
+          "description": "Potion suprême (8D6) + ingrédient de tier 4"
+        },
+        {
+          "tier": 5,
+          "description": "Potion rarissime (10D6) + ingrédient de tier 5"
+        }
+      ],
+      "sourceRange": "A68:F68"
+    },
+    {
+      "id": "voleur",
+      "name": "Voleur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Lors d'une tentative de vol, si le jet de métier est réussi, ne se fait pas repérer"
+        },
+        {
+          "tier": 2,
+          "description": "Ne peut pas être détecté avec le bruit"
+        },
+        {
+          "tier": 3,
+          "description": "Possibilité de crocheter n'importe quelle serrure non magique sur un jet de métier"
+        },
+        {
+          "tier": 4,
+          "description": "Le jet de métier peut remplacer le jet de social pour marchander au marché noir"
+        },
+        {
+          "tier": 5,
+          "description": "Ne peut pas être surpris par un piège"
+        }
+      ],
+      "sourceRange": "A69:F69"
+    },
+    {
+      "id": "spellcrafteur",
+      "name": "Spellcrafteur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Permet de créer un sort utilitaire de niveau 1 à utilisation unique toutes les 24h"
+        },
+        {
+          "tier": 2,
+          "description": "Permet de créer deux sorts utilitaire de niveau 1 à utilisation unique toutes les 24h"
+        },
+        {
+          "tier": 3,
+          "description": "Permet de créer un sort utilitaire de niveau 1 et un autre de niveau 2, à utilisation unique, toutes les 24h"
+        },
+        {
+          "tier": 4,
+          "description": "Permet de créer deux sort utilitaire de niveau 2 à utilisation unique toutes les 24h"
+        },
+        {
+          "tier": 5,
+          "description": "Permet de créer un sort utilitaire de niveau 2 et un autre de niveau 3, à utilisation unique, toutes les 24h"
+        }
+      ],
+      "sourceRange": "A70:F70"
+    },
+    {
+      "id": "marchombre",
+      "name": "Marchombre",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Peut se rendre invisible pendant une minute, l'invisibilité se dissipe en cas de dégât ou d'action"
+        },
+        {
+          "tier": 2,
+          "description": "L'invisibilité dure 10 minutes, et rend silencieux pendant cette dernière"
+        },
+        {
+          "tier": 3,
+          "description": "L'invisibilité dure 30 minutes et résiste désormais aux dégât subis"
+        },
+        {
+          "tier": 4,
+          "description": "L'invisibilité dure deux heures, ne peut pas être détectée par un marchombre ou mage avec minimum trois niveau de moins, et rend inodore"
+        },
+        {
+          "tier": 5,
+          "description": "L'invisibilité dure 24 heures et peut être relancée en combat contre une action"
+        }
+      ],
+      "sourceRange": "A71:F71"
+    },
+    {
+      "id": "runecrafter",
+      "name": "Runecrafter",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Enchantement de palier 1"
+        },
+        {
+          "tier": 2,
+          "description": "Enchantement de palier 2"
+        },
+        {
+          "tier": 3,
+          "description": "Enchantement de palier 3"
+        },
+        {
+          "tier": 4,
+          "description": "Enchantement de palier 4"
+        },
+        {
+          "tier": 5,
+          "description": "Enchantement sur-mesure possible"
+        }
+      ],
+      "sourceRange": "A72:F72"
+    },
+    {
+      "id": "medecin",
+      "name": "Médecin",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Compétences de premiers soins"
+        },
+        {
+          "tier": 2,
+          "description": "Opération de chirurgie sans malus"
+        },
+        {
+          "tier": 3,
+          "description": "Diagnostique automatiquement les maladies communes"
+        },
+        {
+          "tier": 4,
+          "description": "Peut concocter des médicaments pour les maladies communes"
+        },
+        {
+          "tier": 5,
+          "description": "Diagnostique des maladies rares et peut concocter des remèdes pour ces dernières"
+        }
+      ],
+      "sourceRange": "A73:F73"
+    },
+    {
+      "id": "artificier",
+      "name": "Artificier",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A74:F74"
+    },
+    {
+      "id": "pretre",
+      "name": "Prêtre",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A75:F75"
+    },
+    {
+      "id": "harpecheur",
+      "name": "Harpêcheur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Pas de jet nécessaire pour nager en eau calme"
+        },
+        {
+          "tier": 2,
+          "description": "Peut désormais fabriquer des bombes à eau"
+        },
+        {
+          "tier": 3,
+          "description": "Meilleure compréhension de la faune et flore aquatique "
+        },
+        {
+          "tier": 4,
+          "description": "Peut tenir en apnée pendant dix minutes"
+        },
+        {
+          "tier": 5,
+          "description": "Se déplace et agit aussi vite sous l'eau que sur la terre ferme"
+        }
+      ],
+      "sourceRange": "A76:F76"
+    },
+    {
+      "id": "cuisinier",
+      "name": "Cuisinier",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Peut réaliser 2 recettes secondaire qui offrent 1 avantage à partager pour groupe"
+        },
+        {
+          "tier": 2,
+          "description": "Peut réaliser 2 recettes secondaires qui rendent 15% de vie hors combat"
+        },
+        {
+          "tier": 3,
+          "description": "Peut réaliser 2 recette principale ou secondaires. Deux ingrédients possibles, choix possible"
+        },
+        {
+          "tier": 4,
+          "description": "Peut réaliser 2 recettes au choix pour 2 avantages au lieu d'un"
+        },
+        {
+          "tier": 5,
+          "description": "Peut réaliser 2 recettes au choix et soigne 30% de vie hors combat"
+        }
+      ],
+      "sourceRange": "A77:F77"
+    },
+    {
+      "id": "garde-du-corps",
+      "name": "Garde du corps",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Le jet de métier peur remplacer un jet d'instinct pour repérer un danger"
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": "Peut intimider sur un jet de métier"
+        },
+        {
+          "tier": 5,
+          "description": "Ne peut plus être pris par surprise"
+        }
+      ],
+      "sourceRange": "A78:F78"
+    },
+    {
+      "id": "scribe",
+      "name": "Scribe",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Possède un cahier et un crayon en permanence"
+        },
+        {
+          "tier": 2,
+          "description": "Sait faire des dessins de qualité"
+        },
+        {
+          "tier": 3,
+          "description": "Sait faire des cartes de qualité"
+        },
+        {
+          "tier": 4,
+          "description": "Sait écrire dans deux langues modernes ou anciennes"
+        },
+        {
+          "tier": 5,
+          "description": "Gagne un bonus de +2 en Savoir"
+        }
+      ],
+      "sourceRange": "A79:F79"
+    },
+    {
+      "id": "psychologue",
+      "name": "Psychologue",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A80:F80"
+    },
+    {
+      "id": "dresseur",
+      "name": "Dresseur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A81:F81"
+    },
+    {
+      "id": "prophete",
+      "name": "Prophète",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Peut avoir des visions du présent"
+        },
+        {
+          "tier": 2,
+          "description": "Peut avoir des visions du futur proche"
+        },
+        {
+          "tier": 3,
+          "description": "Peut avoir des visions du passé proche"
+        },
+        {
+          "tier": 4,
+          "description": "Peut avoir des visions du futur lointain"
+        },
+        {
+          "tier": 5,
+          "description": "Peut avoir des visions du passé lointain"
+        }
+      ],
+      "sourceRange": "A82:F82"
+    },
+    {
+      "id": "danseur",
+      "name": "Danseur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A83:F83"
+    },
+    {
+      "id": "bricoleur",
+      "name": "Bricoleur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A84:F84"
+    },
+    {
+      "id": "gardienne-des-betes",
+      "name": "Gardienne des bêtes",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Demande une information à un animal, utilisable une seule fois sur un même animal"
+        },
+        {
+          "tier": 2,
+          "description": "Devient l'ami et peut demander de l'aide à un animal à proximité."
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A85:F85"
+    }
+  ],
+  "professionThresholds": [
+    {
+      "tier": 1,
+      "xpRequired": 10,
+      "successText": "50 ou moins",
+      "sourceRange": "Q36:S36"
+    },
+    {
+      "tier": 2,
+      "xpRequired": 15,
+      "successText": "65 ou moins",
+      "sourceRange": "Q37:S37"
+    },
+    {
+      "tier": 3,
+      "xpRequired": 30,
+      "successText": "75 ou moins",
+      "sourceRange": "Q38:S38"
+    },
+    {
+      "tier": 4,
+      "xpRequired": 60,
+      "successText": "85 ou moins",
+      "sourceRange": "Q39:S39"
+    },
+    {
+      "tier": 5,
+      "xpRequired": 120,
+      "successText": "90 ou moins",
+      "sourceRange": "Q40:S40"
+    },
+    {
+      "tier": 6,
+      "xpRequired": null,
+      "successText": "90 ou -, Réu. crit. x2",
+      "sourceRange": "Q41:S41"
+    }
+  ]
+}
