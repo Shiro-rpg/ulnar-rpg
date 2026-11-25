@@ -1,0 +1,21 @@
+{$ULNAR_SITE_ADDRESS} {
+	root * "{$ULNAR_RELEASE_ROOT:/nonexistent/ulnar-unconfigured}"
+	encode zstd gzip
+
+	header {
+		Cache-Control "private, no-store"
+		Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
+		Referrer-Policy no-referrer
+		X-Content-Type-Options nosniff
+	}
+
+	@unsupported not method GET HEAD
+	route {
+		basic_auth {
+			import "{$ULNAR_AUTH_FILE}"
+		}
+		header @unsupported Allow "GET, HEAD"
+		respond @unsupported 405
+		file_server
+	}
+}
