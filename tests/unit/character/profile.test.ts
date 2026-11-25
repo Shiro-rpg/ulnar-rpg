@@ -99,7 +99,7 @@ describe('Character profile validation', () => {
       characterProfileSchema.safeParse({
         ...validProfile,
         raceId: '',
-      }).success
+      }).success,
     ).toBe(false);
   });
 
@@ -108,7 +108,7 @@ describe('Character profile validation', () => {
       characterProfileSchema.safeParse({
         ...validProfile,
         classIds: [''],
-      }).success
+      }).success,
     ).toBe(false);
   });
 
@@ -117,7 +117,7 @@ describe('Character profile validation', () => {
       characterProfileSchema.safeParse({
         ...validProfile,
         unexpectedField: true,
-      }).success
+      }).success,
     ).toBe(false);
   });
 
@@ -126,7 +126,7 @@ describe('Character profile validation', () => {
       characterProfileSchema.safeParse({
         ...validProfile,
         level: '5',
-      }).success
+      }).success,
     ).toBe(false);
   });
 
