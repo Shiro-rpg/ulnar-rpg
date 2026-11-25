@@ -1,0 +1,61 @@
+name: Ulnar RPG - CI
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Quality and tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: '.nvmrc'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run quality checks and tests
+        run: npm run check
+
+      - name: Security audit
+        run: npm audit --audit-level=high
+
+      - name: Upload production build
+        uses: actions/upload-artifact@v6
+        with:
+          name: ulnar-rpg-build
+          path: dist/
+          retention-days: 7
+
+      - name: Upload Playwright report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore
