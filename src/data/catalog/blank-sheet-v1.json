@@ -1,0 +1,849 @@
+{
+  "rulesVersion": "blank-sheet-v1",
+  "sourceWorkbook": "Fiche Vierge(1).xlsx",
+  "sourceSheet": "Data automatisation",
+  "races": [
+    {
+      "id": "humain-e",
+      "name": "Humain.e",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": 5,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": -1,
+        "instinct": null
+      },
+      "sourceRange": "A2:M2"
+    },
+    {
+      "id": "haut-e-elfe",
+      "name": "Haut.e-Elfe",
+      "basePv": 1,
+      "basePp": 4,
+      "modifiers": {
+        "physique": -5,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": 1,
+        "instinct": null
+      },
+      "sourceRange": "A3:M3"
+    },
+    {
+      "id": "elfe-noir-e",
+      "name": "Elfe noir.e",
+      "basePv": 2,
+      "basePp": 3,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": -5,
+        "volonte": null,
+        "force": null,
+        "finesse": 1,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A4:M4"
+    },
+    {
+      "id": "barbegivre",
+      "name": "Barbegivre",
+      "basePv": 4,
+      "basePp": 1,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": 1,
+        "savoir": null,
+        "instinct": -1
+      },
+      "sourceRange": "A5:M5"
+    },
+    {
+      "id": "barbebraise",
+      "name": "Barbebraise",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": -1,
+        "finesse": null,
+        "charisme": 1,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A6:M6"
+    },
+    {
+      "id": "orc",
+      "name": "Orc",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": 1,
+        "finesse": -1,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A7:M7"
+    },
+    {
+      "id": "viera",
+      "name": "Viera",
+      "basePv": 2,
+      "basePp": 3,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": -1,
+        "empathie": null,
+        "savoir": null,
+        "instinct": 1
+      },
+      "sourceRange": "A8:M8"
+    },
+    {
+      "id": "draken",
+      "name": "Draken",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": 5,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": -1,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A9:M9"
+    },
+    {
+      "id": "naahrul",
+      "name": "Na'ahrul",
+      "basePv": 3,
+      "basePp": 2,
+      "modifiers": {
+        "physique": null,
+        "social": -5,
+        "mental": null,
+        "volonte": 10,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A10:M10"
+    },
+    {
+      "id": "darai",
+      "name": "Daraï",
+      "basePv": 2,
+      "basePp": 3,
+      "modifiers": {
+        "physique": null,
+        "social": null,
+        "mental": null,
+        "volonte": null,
+        "force": null,
+        "finesse": 1,
+        "charisme": null,
+        "empathie": null,
+        "savoir": -1,
+        "instinct": null
+      },
+      "sourceRange": "A11:M11"
+    },
+    {
+      "id": "vampire",
+      "name": "Vampire",
+      "basePv": 4,
+      "basePp": 1,
+      "modifiers": {
+        "physique": 5,
+        "social": null,
+        "mental": -5,
+        "volonte": null,
+        "force": null,
+        "finesse": null,
+        "charisme": null,
+        "empathie": null,
+        "savoir": null,
+        "instinct": null
+      },
+      "sourceRange": "A12:M12"
+    }
+  ],
+  "classes": [
+    {
+      "id": "barde",
+      "name": "Barde",
+      "sourceRange": "O1"
+    },
+    {
+      "id": "berserker",
+      "name": "Berserker",
+      "sourceRange": "O2"
+    },
+    {
+      "id": "brisefer",
+      "name": "Brisefer",
+      "sourceRange": "O3"
+    },
+    {
+      "id": "cros-ardents",
+      "name": "Cros ardents",
+      "sourceRange": "O4"
+    },
+    {
+      "id": "fusilier",
+      "name": "Fusilier",
+      "sourceRange": "O5"
+    },
+    {
+      "id": "lance-dargent",
+      "name": "Lance d'argent",
+      "sourceRange": "O6"
+    },
+    {
+      "id": "lame-de-laube",
+      "name": "Lame de l'aube",
+      "sourceRange": "O7"
+    },
+    {
+      "id": "lance-ecailles",
+      "name": "Lance-écailles",
+      "sourceRange": "O8"
+    },
+    {
+      "id": "elementaliste",
+      "name": "Elementaliste",
+      "sourceRange": "O9"
+    },
+    {
+      "id": "marteau-tempete",
+      "name": "Marteau-tempête",
+      "sourceRange": "O10"
+    },
+    {
+      "id": "sentinelle",
+      "name": "Sentinelle",
+      "sourceRange": "O11"
+    },
+    {
+      "id": "shaman",
+      "name": "Shaman",
+      "sourceRange": "O12"
+    },
+    {
+      "id": "sombrelune",
+      "name": "Sombrelune",
+      "sourceRange": "O13"
+    },
+    {
+      "id": "sorceleur",
+      "name": "Sorceleur",
+      "sourceRange": "O14"
+    },
+    {
+      "id": "ironclaw",
+      "name": "Ironclaw",
+      "sourceRange": "O15"
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "sourceRange": "O16"
+    },
+    {
+      "id": "chante-esprit",
+      "name": "Chante-esprit",
+      "sourceRange": "O17"
+    },
+    {
+      "id": "cendresang",
+      "name": "Cendresang",
+      "sourceRange": "O18"
+    },
+    {
+      "id": "vahrash",
+      "name": "Vah'rash",
+      "sourceRange": "O19"
+    },
+    {
+      "id": "veilleur-p",
+      "name": "Veilleur [P]",
+      "sourceRange": "O20"
+    },
+    {
+      "id": "veilleur-a",
+      "name": "Veilleur [A]",
+      "sourceRange": "O21"
+    }
+  ],
+  "professions": [
+    {
+      "id": "forgeron",
+      "name": "Forgeron",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Vous disposez du matériel de réparation pour réparer autant de pièce d'équipements (casque, buste, bouclier, gants ou bottes) que votre niveau de forgeron. Nécessite une heure et se recharge en ville."
+        },
+        {
+          "tier": 2,
+          "description": "Vous pouvez utiliser un jet de métier au lieu d'un jet de savoir pour étudier une arme, une armure ou une forge."
+        },
+        {
+          "tier": 3,
+          "description": "Vous pouvez reconnaitre à l'oeil le palier de force d'une arme ou d'une armure sans jet."
+        },
+        {
+          "tier": 4,
+          "description": "Vous maitrisez un attribut de votre choix parfaitement et vous le fabriquez à moitié prix."
+        },
+        {
+          "tier": 5,
+          "description": "Vous disposez du matériel de réparation pour réparer jusqu'à 2x votre niveau de forgeron en pièce d'équipements au lieu de x1. Nécessite une heure et se recharge en ville."
+        }
+      ],
+      "sourceRange": "A67:F67"
+    },
+    {
+      "id": "alchimiste",
+      "name": "Alchimiste",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Vous maitrisez une potion de tier 2 maximum. Vous la fabriquez à moitié prix."
+        },
+        {
+          "tier": 2,
+          "description": "Vous pouvez résister à un jet de poison ou un effet droguant sur un jet de métier."
+        },
+        {
+          "tier": 3,
+          "description": "Vous pouvez faire un jet de métier sans malus pour reconnaitre à l'odeur les ingrédients d'une potion."
+        },
+        {
+          "tier": 4,
+          "description": "PotiVous maitrisez une potion de tier 5 maximum. Vous la fabriquez à moitié prix."
+        },
+        {
+          "tier": 5,
+          "description": "Quand vous faites un jet pour consommer ou faire consommer une potion, vous pouvez le faire sur un jet de métier."
+        }
+      ],
+      "sourceRange": "A68:F68"
+    },
+    {
+      "id": "voleur",
+      "name": "Voleur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Lors d'une tentative de vol, si le jet de métier est réussi, ne se fait pas repérer"
+        },
+        {
+          "tier": 2,
+          "description": "Ne peut pas être détecté avec le bruit"
+        },
+        {
+          "tier": 3,
+          "description": "Possibilité de crocheter n'importe quelle serrure non magique sur un jet de métier"
+        },
+        {
+          "tier": 4,
+          "description": "Le jet de métier peut remplacer le jet de social pour marchander au marché noir"
+        },
+        {
+          "tier": 5,
+          "description": "Ne peut pas être surpris par un piège"
+        }
+      ],
+      "sourceRange": "A69:F69"
+    },
+    {
+      "id": "spellcrafteur",
+      "name": "Spellcrafteur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Permet de créer un sort utilitaire de niveau 1 à utilisation unique toutes les 24h"
+        },
+        {
+          "tier": 2,
+          "description": "Permet de créer deux sorts utilitaire de niveau 1 à utilisation unique toutes les 24h"
+        },
+        {
+          "tier": 3,
+          "description": "Permet de créer un sort utilitaire de niveau 1 et un autre de niveau 2, à utilisation unique, toutes les 24h"
+        },
+        {
+          "tier": 4,
+          "description": "Permet de créer deux sort utilitaire de niveau 2 à utilisation unique toutes les 24h"
+        },
+        {
+          "tier": 5,
+          "description": "Permet de créer un sort utilitaire de niveau 2 et un autre de niveau 3, à utilisation unique, toutes les 24h"
+        }
+      ],
+      "sourceRange": "A70:F70"
+    },
+    {
+      "id": "marchombre",
+      "name": "Marchombre",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Peut se rendre invisible pendant une minute, l'invisibilité se dissipe en cas de dégât ou d'action"
+        },
+        {
+          "tier": 2,
+          "description": "L'invisibilité dure 10 minutes, et rend silencieux pendant cette dernière"
+        },
+        {
+          "tier": 3,
+          "description": "L'invisibilité dure 30 minutes et résiste désormais aux dégât subis"
+        },
+        {
+          "tier": 4,
+          "description": "L'invisibilité dure deux heures, ne peut pas être détectée par un marchombre ou mage avec minimum trois niveau de moins, et rend inodore"
+        },
+        {
+          "tier": 5,
+          "description": "L'invisibilité dure 24 heures."
+        }
+      ],
+      "sourceRange": "A71:F71"
+    },
+    {
+      "id": "runecrafter",
+      "name": "Runecrafter",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Sur un jet de métier, vous savez comprendre des objets magiques gravés de runes"
+        },
+        {
+          "tier": 2,
+          "description": "Vous savez faire des enchantements. Vous maitrisez un enchantement de ppalier 2 maximum, vous le fabriquez à moitié prix."
+        },
+        {
+          "tier": 3,
+          "description": "Vous pouvez faire un jet de métier pour réparer un objet magique abimé"
+        },
+        {
+          "tier": 4,
+          "description": "Vous maitrisez un enchantement de palier 4 maximum, vous le fabriquez à moitié prix."
+        },
+        {
+          "tier": 5,
+          "description": "Vous pouvez modifier un enchantement par un enchantement de même palier. Nécessite 6h et se recharge en ville."
+        }
+      ],
+      "sourceRange": "A72:F72"
+    },
+    {
+      "id": "medecin",
+      "name": "Médecin",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Compétences de premier soin sur un jet de métier."
+        },
+        {
+          "tier": 2,
+          "description": "Opération de chirugie sans malus sur un jet de métier."
+        },
+        {
+          "tier": 3,
+          "description": "Diagnostique automatique des maladies communes sans jet."
+        },
+        {
+          "tier": 4,
+          "description": "Conconcotion des médicaments sur les maladies communes sans malus sur un jet de métier."
+        },
+        {
+          "tier": 5,
+          "description": "Diagnostic des maladies rares et concoction des médicaments appropriés sur un jet de métier."
+        }
+      ],
+      "sourceRange": "A73:F73"
+    },
+    {
+      "id": "artificier",
+      "name": "Artificier",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "L'artificier peut faire exploser des serrures de portes et de coffres sur un jet de métier. Toujours hors combat."
+        },
+        {
+          "tier": 2,
+          "description": "Sait reconnaitre les murs porteurs sans faire de jet. L'artificier peut faire exploser une paroi de maximum 10cm d'épaisseur sans malus."
+        },
+        {
+          "tier": 3,
+          "description": "L'artificier peut faire exploser une paroi de maximum 3m de profondeur ou une porte blindée sans malus."
+        },
+        {
+          "tier": 4,
+          "description": "Peut faire exploser une paroi de maximum 10m de profondeur."
+        },
+        {
+          "tier": 5,
+          "description": "Vous pouvez créer des explosifs capable de faire du bruit à 2km à la ronde et de déclencher des avalanches. Vos explosifs peuvent se déclencher à retardement (maximum 5 minutes)."
+        }
+      ],
+      "sourceRange": "A74:F74"
+    },
+    {
+      "id": "pretre",
+      "name": "Prêtre",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Prière de soutien : Permet d'offrir une fois par session un bonus de 10 (principal) ou 1 (secondaire  à n'importe quel lancer hors combat."
+        },
+        {
+          "tier": 2,
+          "description": "Le métier peut remplacer un jet de social pour un prêtre ou une personne croyante. "
+        },
+        {
+          "tier": 3,
+          "description": "Vous connaissez tous les éléments pour purifier un corps ou faire un rituel funéraire. Vous savez distingué les éléments d'un culte."
+        },
+        {
+          "tier": 4,
+          "description": "Vérité : Permet de demander conseil aux dieux pour avoir une bénédiction ou un oracle sur un jet de métier."
+        },
+        {
+          "tier": 5,
+          "description": "Vos échecs critiques sur un appel de dieu n'ont plus d'effet négatif."
+        }
+      ],
+      "sourceRange": "A75:F75"
+    },
+    {
+      "id": "harpecheur",
+      "name": "Harpêcheur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Pas de jet nécessaire pour nager en eau calme"
+        },
+        {
+          "tier": 2,
+          "description": "Peut désormais fabriquer des bombes à eau"
+        },
+        {
+          "tier": 3,
+          "description": "Meilleure compréhension de la faune et flore aquatique "
+        },
+        {
+          "tier": 4,
+          "description": "Peut tenir en apnée pendant dix minutes"
+        },
+        {
+          "tier": 5,
+          "description": "Se déplace et agit aussi vite sous l'eau que sur la terre ferme"
+        }
+      ],
+      "sourceRange": "A76:F76"
+    },
+    {
+      "id": "cuisinier",
+      "name": "Cuisinier",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Peut réaliser 2 recettes secondaire qui offrent 1 avantage à partager pour groupe"
+        },
+        {
+          "tier": 2,
+          "description": "Peut réaliser 2 recettes secondaires qui rendent 15% de vie hors combat"
+        },
+        {
+          "tier": 3,
+          "description": "Peut réaliser 2 recette principale ou secondaires. Deux ingrédients possibles, choix possible"
+        },
+        {
+          "tier": 4,
+          "description": "Peut réaliser 2 recettes au choix pour 2 avantages au lieu d'un"
+        },
+        {
+          "tier": 5,
+          "description": "Peut réaliser 2 recettes au choix et soigne 30% de vie hors combat"
+        }
+      ],
+      "sourceRange": "A77:F77"
+    },
+    {
+      "id": "garde-du-corps",
+      "name": "Garde du corps",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Peut remplacer un jet d'Instinct pour repérer un danger"
+        },
+        {
+          "tier": 2,
+          "description": "Peut remplacer un jet de social avec des gardes"
+        },
+        {
+          "tier": 3,
+          "description": "Vous savez faire un massage cardiaque et des bandages sur un jet de métier."
+        },
+        {
+          "tier": 4,
+          "description": "Peut intimider sur un jet de métier"
+        },
+        {
+          "tier": 5,
+          "description": "Ne peut plus être pris par surprise"
+        }
+      ],
+      "sourceRange": "A78:F78"
+    },
+    {
+      "id": "scribe",
+      "name": "Scribe",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Possède un cahier et un crayon. Vous savez parfaitement lire et écrire la langue commune et vous pouvez essayer de deviner des mots d'une autre langue."
+        },
+        {
+          "tier": 2,
+          "description": "Sait faire des dessins de qualité sans malus, comme un visage, une scène, etc..."
+        },
+        {
+          "tier": 3,
+          "description": "Sait faire des cartes de qualité sans malus et les comprendre."
+        },
+        {
+          "tier": 4,
+          "description": "Sait lire et écrire parfaitement deux langues modernes ou anciennes."
+        },
+        {
+          "tier": 5,
+          "description": "Gagne un bonus de +1 en Savoir"
+        }
+      ],
+      "sourceRange": "A79:F79"
+    },
+    {
+      "id": "psychologue",
+      "name": "Psychologue",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A80:F80"
+    },
+    {
+      "id": "dresseur",
+      "name": "Dresseur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Dressage sans malus : créature de 2m max "
+        },
+        {
+          "tier": 2,
+          "description": "Dressage sans malus : tout animal"
+        },
+        {
+          "tier": 3,
+          "description": "1 animal dressé parfaitement possible. Aucun jet nécessaire en situation normale."
+        },
+        {
+          "tier": 4,
+          "description": "Parler et comprendre parfaitement un animal parfaitement dressé sans jet. Permet de tenter sur un animal sauvage."
+        },
+        {
+          "tier": 5,
+          "description": "2 animaux dressés parfaitement possible. Aucun jet nécessaire en situation critique."
+        }
+      ],
+      "sourceRange": "A81:F81"
+    },
+    {
+      "id": "prophete",
+      "name": "Prophète",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Peut avoir des visions du présent"
+        },
+        {
+          "tier": 2,
+          "description": "Peut avoir des visions du futur proche"
+        },
+        {
+          "tier": 3,
+          "description": "Peut avoir des visions du passé proche"
+        },
+        {
+          "tier": 4,
+          "description": "Peut avoir des visions du futur lointain"
+        },
+        {
+          "tier": 5,
+          "description": "Peut avoir des visions du passé lointain"
+        }
+      ],
+      "sourceRange": "A82:F82"
+    },
+    {
+      "id": "danseur",
+      "name": "Danseur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": "Maîtrise une danse de votre choix sans malus"
+        },
+        {
+          "tier": 2,
+          "description": "Maîtrise une deuxième danse de votre choix sans malus."
+        },
+        {
+          "tier": 3,
+          "description": "Maîtrise une troisième danse de votre choix sans malus.  Une représentation de danse peut remplacer un jet de social pour laisser une bonne impression."
+        },
+        {
+          "tier": 4,
+          "description": "Vous maîtrisez une quatrième danse de votre choix sans malus. Vous vous déplacez sans faire de bruit."
+        },
+        {
+          "tier": 5,
+          "description": "Maîtrise une cinquième danse de votre choix sans malus. Vous ne pouvez jamais perdre votre équilibre. "
+        }
+      ],
+      "sourceRange": "A83:F83"
+    },
+    {
+      "id": "bricoleur",
+      "name": "Bricoleur",
+      "skills": [
+        {
+          "tier": 1,
+          "description": null
+        },
+        {
+          "tier": 2,
+          "description": null
+        },
+        {
+          "tier": 3,
+          "description": null
+        },
+        {
+          "tier": 4,
+          "description": null
+        },
+        {
+          "tier": 5,
+          "description": null
+        }
+      ],
+      "sourceRange": "A84:F84"
+    }
+  ],
+  "professionThresholds": [
+    {
+      "tier": 1,
+      "xpRequired": 10,
+      "successText": "50 ou moins",
+      "sourceRange": "Q36:S36"
+    },
+    {
+      "tier": 2,
+      "xpRequired": 15,
+      "successText": "65 ou moins",
+      "sourceRange": "Q37:S37"
+    },
+    {
+      "tier": 3,
+      "xpRequired": 30,
+      "successText": "75 ou moins",
+      "sourceRange": "Q38:S38"
+    },
+    {
+      "tier": 4,
+      "xpRequired": 60,
+      "successText": "85 ou moins",
+      "sourceRange": "Q39:S39"
+    },
+    {
+      "tier": 5,
+      "xpRequired": 120,
+      "successText": "90 ou moins",
+      "sourceRange": "Q40:S40"
+    },
+    {
+      "tier": 6,
+      "xpRequired": null,
+      "successText": "90 ou -, Réu. crit. x2",
+      "sourceRange": "Q41:S41"
+    }
+  ]
+}
